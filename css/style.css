@@ -1,0 +1,39 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  max-width: 300px;
+
+  margin: 60px auto;
+}
+
+.tile {
+  border: 1px solid #000;
+  
+  min-width: 100px;
+  min-height: 100px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 50px;
+  
+  cursor: pointer;
+}
+
+.playerX {
+  color: #09c372;
+}
+
+.playerO {
+  color: #498aFB;
+}
